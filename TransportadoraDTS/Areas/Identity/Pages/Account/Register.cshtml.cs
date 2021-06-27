@@ -76,7 +76,7 @@ namespace Transportadora.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            returnUrl = returnUrl ?? Url.Content("~/");
+            returnUrl ??= Url.Content("~/");
           
             if (ModelState.IsValid)
             {
@@ -122,7 +122,7 @@ namespace Transportadora.Areas.Identity.Pages.Account
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToPage("RegisterConfirmation", (email: Input.Email, returnUrl));
                     }
                     else
                     {
