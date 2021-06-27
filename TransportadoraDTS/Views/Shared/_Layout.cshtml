@@ -15,7 +15,7 @@
 <<<<<<< HEAD
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="/imagens/logo.jpg" width="200" height="75"></a>
 =======
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="/Imagens-site/logo_jmhdesign.jpg" width="200" height="75"></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="/imagens/logo.jpg" width="200" height="75"></a>
 >>>>>>> 8e6bdcb9c74cc39f2450e026a96dc9ec69b0e595
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
                         @if (User.Identity.IsAuthenticated)
                         {
             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Projetos" asp-action="Index">Encomendas</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Encomendas" asp-action="Index">Encomendas</a>
             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Formularios" asp-action="Index">Encomendas</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Encomendas" asp-action="Index">Encomendas</a>
                             </li>
                                             @if (User.IsInRole("funcionario"))
                                             {
