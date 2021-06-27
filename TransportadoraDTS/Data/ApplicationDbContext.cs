@@ -29,5 +29,10 @@ namespace Transportadora.Data
         public DbSet<Envios> Envios { get; set; }
         public DbSet<Funcionarios> Funcionarios { get; set; }
 
+
+
+
+
+
     }
 }
