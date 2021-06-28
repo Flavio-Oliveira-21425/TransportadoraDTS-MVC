@@ -204,7 +204,7 @@ body {
 #hero-cliente {
     width: 100%;
     height: 100vh;
-    background: url(../Imagens-site/fundo-cliente.jpg) top center;
+    background: url(../imagens/fundo_cliente.jpg) top center;
     background-size: cover;
     position: relative;
 }
@@ -293,7 +293,7 @@ body {
 #hero-func {
     width: 100%;
     height: 100vh;
-    background: url(../Imagens-site/fundo-func.jpg) top center;
+    background: url(../imagens/fundo_funcionario.jpg) top center;
     background-size: cover;
     position: relative;
 }

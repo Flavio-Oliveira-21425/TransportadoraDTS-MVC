@@ -84,13 +84,6 @@ namespace Transportadora.Models
         public DateTime DataEntrega { get; set; }
 
         ///<summary>
-        ///Estado da Encomenda
-        /// </summary>
-        [Required(ErrorMessage = "O {0} é de preenchimento obrigatório")]
-        [Display(Name = "Estado")]
-        public string Estado { get; set; }
-
-        ///<summary>
         ///Altura da Encomenda
         /// </summary>
         [Required(ErrorMessage = "O {0} é de preenchimento obrigatório")]
