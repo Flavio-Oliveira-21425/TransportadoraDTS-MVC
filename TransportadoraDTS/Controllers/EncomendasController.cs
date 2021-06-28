@@ -76,7 +76,7 @@ namespace Transportadora.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id_encomendas,Nome,Tipo,Descricao,Morada,CodPostal,DataEnvio,DataEntrega,Altura,Largura,Comprimento,Peso,IdCliente,ListaFuncionarios")] Encomendas Encomendas)
+        public async Task<IActionResult> Create([Bind("Id_encomendas,Nome,Tipo,Descricao,Estado,Morada,CodPostal,DataEnvio,DataEntrega,Altura,Largura,Comprimento,Peso,IdCliente,ListaFuncionarios")] Encomendas Encomendas)
         {
 
             
@@ -118,7 +118,7 @@ namespace Transportadora.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id_encomendas,Nome,Tipo,Descricao,Morada,CodPostal,DataEnvio,DataEntrega,Altura,Largura,Comprimento,Peso,IdCliente,ListaFuncionarios")] Encomendas Encomendas)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_encomendas,Nome,Tipo,Descricao,Estado,Morada,CodPostal,DataEnvio,DataEntrega,Altura,Largura,Comprimento,Peso,IdCliente,ListaFuncionarios")] Encomendas Encomendas)
         {
             if (id != Encomendas.Id_encomenda)
             {
